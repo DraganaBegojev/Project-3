@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,11 +14,49 @@
         <h1>THE CODE REVIEW</h1>
     </header>
     <main>
-        <div class="descr">
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox</p>
-        </div>
-        <form></form>
+        <form action="index.html" method="post">
+            <div class="descr">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name">
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user-address">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user-city">
+                <label for="state">State</label>
+                <select id="state" name="user-state">
+                    <optgroup label="Australia">
+                        <option value="new_south_wales">New South Wales</option>
+                        <option value="victoria">Victoria</option>  
+                        <option value="queensland">Queensland</option>
+                      </optgroup>
+                    <optgroup label="Europe">
+                        <option value="austria">Austria</option>
+                        <option value="denmark">Denmark</option>  
+                        <option value="france">France</option>
+                        <option value="greece">Greece</option>  
+                        <option value="italy">Italy</option>
+                        <option value="serbia">Serbia</option>
+                        <option value="spain">Spain</option>
+                        <option value="sweden">Sweden</option>
+                      </optgroup>
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user-zip">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Newsletter</legend>
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>
