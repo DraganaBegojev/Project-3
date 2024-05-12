@@ -48,15 +48,30 @@
                         <option value="serbia">Serbia</option>
                         <option value="spain">Spain</option>
                         <option value="sweden">Sweden</option>
-                      </optgroup>
+                    </optgroup>
+                </select>
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user-zip">
             </fieldset>
             
             <fieldset>
                 <legend>Newsletter</legend>
+                <label>Select the newsletters you would like to receive</label>
+                <input type="checkbox" id="html_news" value="html_news" name="user_interest"><label for="html_news" class="newsletter">HTML News</label><br>
+                <input type="checkbox" id="css" value="css_news" name="user_interest"><label for="css" class="newsletter">CSS News</label><br>
+                <input type="checkbox" id="javascript" value="javascript_news" name="user_interest"><label for="javascript" class="newsletter">Javascript News</label>
+                <label>Newsletter format</label>
+                <input type="radio" id="html" value="html" name="newsletter_format"><label for="html" class="newsletter">HTML</label><br>
+                <input type="radio" id="plain_text" value="text" name="newsletter_format"><label for="plain_text" class="newsletter">Plain text</label>
+
+                <label for="topics">Other topics you would like to hear about</label>
+                <textarea id="topics" name="other_topics"></textarea> 
             </fieldset>
+            <button type="submit">Sign Up</button>
         </form>
     </main>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
 </body>
 </html>
