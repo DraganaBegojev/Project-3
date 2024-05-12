@@ -1,3 +1,18 @@
+body {
+    font-family: "Merriweather", serif;    
+}
+header, .descr, footer {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #01041aee;
+    color: #dedede;
+}
+
 label {
     display: block;
 }
