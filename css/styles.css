@@ -1,20 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    color: #01041aee;
+}
 body {
-    font-family: "Merriweather", serif;    
+    font-family: "Merriweather", serif;   
+}
+.container{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 header, .descr, footer {
     text-align: center;
 }
 
-h1 {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+header {
     background: #01041aee;
     color: #dedede;
 }
+header h1 {
+    font-size: 16px;
+}
 
+h2 {
+    font-size: 20px;
+    font-weight: 900;
+}
+.descr p {
+    color: #a5a5a5;
+}
+fieldset {
+    border: none;
+}
 label {
     display: block;
+}
+.styles {
+    display: block; 
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px; 
+    font-size: 18px;
+    background: #eee;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+}
+input#zip {
+    width: 50%;
+}
+[type="checkbox"], [type="radio"] {
+    margin-right: 15px;
 }
 
 .newsletter {
