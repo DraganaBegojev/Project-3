@@ -20,54 +20,58 @@
                 <h2>Signup for our newsletter</h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </div>
-            <fieldset>
-                <legend>Contact Information</legend>
+            <div class="box">
+                <fieldset>
+                    <legend>Contact Information</legend>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required" class="styles">
-                <label for="mail">Email Address</label>
-                <input type="email" id="mail" name="user_email" placeholder="Required" class="styles">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone" class="styles">
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user-address" class="styles">
-                <label for="city">City</label>
-                <input type="text" id="city" name="user-city" class="styles">
-                <label for="state">State</label>
-                <select id="state" name="user-state" class="styles">
-                    <optgroup label="Australia">
-                        <option value="new_south_wales">New South Wales</option>
-                        <option value="victoria">Victoria</option>  
-                        <option value="queensland">Queensland</option>
-                      </optgroup>
-                    <optgroup label="Europe">
-                        <option value="austria">Austria</option>
-                        <option value="denmark">Denmark</option>  
-                        <option value="france">France</option>
-                        <option value="greece">Greece</option>  
-                        <option value="italy">Italy</option>
-                        <option value="serbia">Serbia</option>
-                        <option value="spain">Spain</option>
-                        <option value="sweden">Sweden</option>
-                    </optgroup>
-                </select>
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="user-zip" class="styles">
-            </fieldset>
-            
-            <fieldset>
-                <legend>Newsletter</legend>
-                <label>Select the newsletters you would like to receive</label>
-                <input type="checkbox" id="html_news" value="html_news" name="user_interest"><label for="html_news" class="newsletter">HTML News</label><br>
-                <input type="checkbox" id="css" value="css_news" name="user_interest"><label for="css" class="newsletter">CSS News</label><br>
-                <input type="checkbox" id="javascript" value="javascript_news" name="user_interest"><label for="javascript" class="newsletter">Javascript News</label>
-                <label>Newsletter format</label>
-                <input type="radio" id="html" value="html" name="newsletter_format"><label for="html" class="newsletter">HTML</label><br>
-                <input type="radio" id="plain_text" value="text" name="newsletter_format"><label for="plain_text" class="newsletter">Plain text</label>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required" class="styles">
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Required" class="styles">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone" class="styles">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user-address" class="styles">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user-city" class="styles">
+                    <label for="state">State</label>
+                    <select id="state" name="user-state" class="styles">
+                        <option value="" disabled selected>Choose State</option>
+                        <optgroup label="Australia">
+                            <option value="new_south_wales">New South Wales</option>
+                            <option value="victoria">Victoria</option>  
+                            <option value="queensland">Queensland</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="austria">Austria</option>
+                            <option value="denmark">Denmark</option>  
+                            <option value="france">France</option>
+                            <option value="greece">Greece</option>  
+                            <option value="italy">Italy</option>
+                            <option value="serbia">Serbia</option>
+                            <option value="spain">Spain</option>
+                            <option value="sweden">Sweden</option>
+                        </optgroup>
+                    </select>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user-zip" class="styles">
+                </fieldset>
+             </div>
+             <div class="box">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <label>Select the newsletters you would like to receive</label>
+                    <input type="checkbox" id="html_news" value="html_news" name="user_interest"><label for="html_news" class="newsletter">HTML News</label><br>
+                    <input type="checkbox" id="css" value="css_news" name="user_interest"><label for="css" class="newsletter">CSS News</label><br>
+                    <input type="checkbox" id="javascript" value="javascript_news" name="user_interest"><label for="javascript" class="newsletter">Javascript News</label>
+                    <label>Newsletter format</label>
+                    <input type="radio" id="html" value="html" name="newsletter_format"><label for="html" class="newsletter">HTML</label><br>
+                    <input type="radio" id="plain_text" value="text" name="newsletter_format"><label for="plain_text" class="newsletter">Plain text</label>
 
-                <label for="topics">Other topics you would like to hear about</label>
-                <textarea id="topics" name="other_topics" class="styles"></textarea> 
-            </fieldset>
+                    <label for="topics">Other topics you would like to hear about</label>
+                    <textarea id="topics" name="other_topics" class="styles"></textarea> 
+                </fieldset>
+            </div>
             <button type="submit">Sign Up</button>
         </form>
     </main>
