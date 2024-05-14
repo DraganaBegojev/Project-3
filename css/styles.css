@@ -69,13 +69,18 @@ label {
 }
 
 #state {
-    color: #c8c1c1;
     appearance: none;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg height='100px' id='Capa_1' style='enable-background:new 0 0 46 100;' version='1.1' viewBox='0 0 46 100' width='46px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M22.998,0L0,36.498l46,0.004L22.998,0z M23.004,100L46,63.502L0,63.498L23.004,100z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.7rem top 50%;
     background-size: 0.65rem auto;
+    color:#c8c1c1;
 }
+
+#state > optgroup {
+    color: rgb(0, 0, 0) !important;
+}
+
 
 input#zip {
     width: 50%;
