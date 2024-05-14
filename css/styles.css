@@ -97,6 +97,7 @@ button.styles {
     font-size: 18px;
     height: 60px;
     margin: 0;
+    cursor: pointer;
 }
 
 .newsletter {
