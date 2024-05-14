@@ -9,7 +9,7 @@ body {
     font-family: "Merriweather", serif;   
 }
 .container{
-    max-width: 860px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -107,4 +107,28 @@ footer.container {
     padding-top: 0;
     color: #c8c1c1;
     font-style: italic;
+}
+
+/* When the browser is at least 768px and above */
+@media (min-width: 768px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .contact input, .contact select {
+        flex-basis: calc(75%);
+    }
+    .contact label  {
+        flex-basis: calc(25%);
+    }
+    input#zip {
+        flex-basis: calc(25%);
+    }
+    .box {
+        padding-top: 50px;
+    }
+    .descr {
+        padding-top: 20px;
+    }
 }
