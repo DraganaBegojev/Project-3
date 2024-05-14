@@ -39,33 +39,67 @@ h2, legend {
 }
 fieldset {
     border: none;
-    padding: 20px 0;
+    padding: 0;
 }
-.box{
+.box {
 border-top: solid 2px #000;
-padding-top: 20px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 label {
     display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
-.styles {
+::placeholder {
+    text-align: right;
+    font-size: 14px;
+    font-style: italic;
+    color: #c8c1c1;
+  }
+  .styles {
     display: block; 
     width: 100%;
     margin: 5px 0;
-    padding: 8px; 
-    font-size: 18px;
+    padding: 20px; 
     background: #eee;
     border: none;
-    height: 50px;
+    height: 60px;
     border-radius: 5px;
 }
+
+#state {
+    color: #c8c1c1;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg height='100px' id='Capa_1' style='enable-background:new 0 0 46 100;' version='1.1' viewBox='0 0 46 100' width='46px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M22.998,0L0,36.498l46,0.004L22.998,0z M23.004,100L46,63.502L0,63.498L23.004,100z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem top 50%;
+    background-size: 0.65rem auto;
+}
+
 input#zip {
     width: 50%;
 }
 [type="checkbox"], [type="radio"] {
-    margin-right: 15px;
+    margin: 10px 15px 10px 0;
+}
+textarea#topics {
+    height: 100px;
+}
+button.styles {
+    background: #0bb9a3;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    margin: 0;
 }
 
 .newsletter {
     display: inline;
+}
+
+footer.container {
+    padding-top: 0;
+    color: #c8c1c1;
+    font-style: italic;
 }
