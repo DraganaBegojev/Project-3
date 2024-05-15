@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 16px;
+    font-size: 14px;
     color: #01041aee;
 }
 body {
@@ -11,8 +11,13 @@ body {
 .container{
     max-width: 700px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.1rem;
 }
+
+main.container {
+    background: #f3f9ff;
+}
+
 header, .descr, footer {
     text-align: center;
 }
@@ -43,13 +48,11 @@ fieldset {
 }
 .box {
     border-top: solid 2px #000;
-    padding: 30px 5px;
+    padding: 30px 0;
 }
+
 .box:nth-child(2) {
-    background-color: #ffffed;
-}
-.box:nth-child(3) {
-    background-color: #f0f9ff;
+    background-color: #e6fbff;
 }
 label {
     display: block;
@@ -67,7 +70,7 @@ label {
     width: 100%;
     margin: 5px 0;
     padding: 20px; 
-    background: #eee;
+    background: #efefef;
     border: none;
     height: 60px;
     border-radius: 5px;
@@ -98,7 +101,7 @@ textarea#topics {
     height: 100px;
 }
 button.styles {
-    background: #0bb9a3;
+    background: #44b9ae;
     color: white;
     font-size: 18px;
     height: 60px;
@@ -111,7 +114,7 @@ button.styles {
 }
 
 input:focus, select:focus, textarea:focus, button:focus {
-    outline-color:  rgb(4, 4, 71);
+    outline-color:  rgb(5, 5, 48);
 }
 
 *:focus {
@@ -119,9 +122,13 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 footer.container {
-    padding-top: 0;
     color: #c8c1c1;
     font-style: italic;
+    background: #f3f9ff;
+}
+
+footer > p {
+    margin-top: 0;
 }
 
 /* When the browser is at least 768px and above */
